@@ -6,7 +6,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import bird from "../assets/images/bird-colorful-1avif.avif";
 import sublogo from "../assets/images/vortex.avif";
-import heroimg from "../assets/images/pexelshero.jpeg"
+import heroimg from "../assets/images/ajayMaindola.jpg"
 export default function Profile() {
   return (
     <>

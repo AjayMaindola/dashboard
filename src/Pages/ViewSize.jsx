@@ -55,7 +55,7 @@ export default function ViewSize() {
             <Table hoverable>
               <Table.Head>
                 <Table.HeadCell className="p-[0px] gap-4"></Table.HeadCell>
-                <Table.HeadCell>Delete</Table.HeadCell>
+                <Table.HeadCell>Select</Table.HeadCell>
                 <Table.HeadCell>Color Name</Table.HeadCell>
                 <Table.HeadCell>Color Code</Table.HeadCell>
                 <Table.HeadCell>Action</Table.HeadCell>

@@ -101,6 +101,7 @@ function PCat({ pCatData, mainIndex, showMenue, setShowMenu }) {
             </svg>
             <h3 className="text-[13px] cursor-pointer">
               <Link to={smenu1Link}>{smenu1}</Link>{" "}
+             
             </h3>
           </span>
 
@@ -130,7 +131,9 @@ function PCat({ pCatData, mainIndex, showMenue, setShowMenu }) {
             >
               <path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256-96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"></path>
             </svg>
-            <h3 className="text-[13px] cursor-pointer">{smenu1}</h3>
+            
+            <h3 className="text-[13px] cursor-pointer">
+            <Link to={smenu1Link}>{smenu1}  </Link></h3>
           </span>
         </div>
       ) : (

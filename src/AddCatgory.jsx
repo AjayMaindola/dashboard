@@ -1,7 +1,8 @@
+import { Button, Label, Radio } from "flowbite-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Label, Radio } from "flowbite-react";
-export default function SizeDetails() {
+
+export default function AddCatgory() {
   return (
     <>
       <nav className="flex border-b-2 mx-[10px] " aria-label="Breadcrumb">
@@ -18,10 +19,10 @@ export default function SizeDetails() {
             <div className="flex items-center">
               /
               <Link
-                to={"/size-details"}
+                to={"/add-category"}
                 className="ms-1 text-md font-medium text-gray-700 hover:text-blue-600 md:ms-2"
               >
-                Size
+                Category
               </Link>
             </div>
           </li>
@@ -29,14 +30,13 @@ export default function SizeDetails() {
             <div className="flex items-center">
               /
               <Link
-                to={"/size-details"}
+                to={"/add-category"}
                 className="ms-1 text-md font-medium text-gray-700 hover:text-blue-600 md:ms-2"
               >
-                Size Details
+                Add Category
               </Link>
             </div>
           </li>
-
           <li aria-current="page">
             <div className="flex items-center">
               <span className="ms-1 text-md font-medium text-gray-500 md:ms-2"></span>
@@ -44,21 +44,25 @@ export default function SizeDetails() {
           </li>
         </ol>
       </nav>
-
       {/* Second section div start */}
-      <div className="max-w-1320px mx-auto py-[20px] px-[40px] mb-[230px]">
+      <div className="max-w-1320px mx-auto py-[8px] px-[40px] mb-[0px]">
         <div className=" middle  rounded-t-xl border pb-[30px] ">
           <h1 className="text-[18px] font-bold  py-[10px] px-[20px] bg-[#f1f5f9]  rounded-t-xl ">
-            Add Size
+            Add Category
           </h1>
-          <div className=" py-[10px] px-[20px]">
-            <h1 className="pb-[20px]">Size Name</h1>
+          <form className=" py-[10px] px-[20px]">
+            <h1 className="pb-[20px] font-semibold ">Category Name</h1>
             <input
               className="w-full rounded-md text-[14px]"
               type="text"
-              placeholder="Size Name"
+              placeholder="Category Name"
             />
-            <div className="flex items-center gap-10">
+            <h1 className="pb-[20px] mt-4 font-semibold">Category Image</h1>
+            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" id="file_input" type="file"/>
+            <h1 className="pb-[20px] mt-4 font-semibold">Category Description</h1>
+            <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add Product Discriptio..."></textarea>
+
+            <div className="flex items-center gap-10 mt-2">
               <h1 className="py-[15px]">Status :</h1>
               <div className="flex items-center gap-2">
                 <div className="flex items-center gap-2">
@@ -71,9 +75,8 @@ export default function SizeDetails() {
                 </div>
               </div>
             </div>
-            <Button className="bg-violet-700">Add Size</Button>
-
-          </div>
+            <Button className="bg-violet-700">Add Category</Button>
+          </form>
         </div>
       </div>
     </>

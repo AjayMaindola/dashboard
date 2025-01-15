@@ -17,7 +17,7 @@ export default function Login() {
             <input className="w-full border rounded p-2 outline-none focus:shadow-outline" type="password" name="password" id="password" placeholder="Password"/>
           </div>
           <button className="bg-green-500 hover:bg-green-700 text-white uppercase text-sm font-semibold px-4 py-2 rounded">
-           <Link to={'/dashboard'} >
+           <Link to={'dashboard/'} >
            Login</Link> 
             </button>
         </form>
